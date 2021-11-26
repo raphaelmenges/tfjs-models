@@ -1,0 +1,1 @@
+Taken from https://tfhub.dev/mediapipe/tfjs-model/facemesh/1/default/1 at 26th November 2021.

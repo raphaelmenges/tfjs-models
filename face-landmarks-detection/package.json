@@ -1,6 +1,6 @@
 {
   "name": "@tensorflow-models/face-landmarks-detection",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Pretrained face landmarks detection model",
   "main": "dist/index.js",
   "jsnext:main": "dist/face-landmarks-detection.esm.js",
@@ -40,7 +40,7 @@
     "yalc": "~1.0.0-pre.21"
   },
   "scripts": {
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && cp -r src/mediapipe-facemesh/models dist/mediapipe-facemesh/models",
     "publish-local": "yarn build && rollup -c && yalc publish",
     "test": "ts-node --skip-ignore --project tsconfig.test.json run_tests.ts",
     "build-npm": "yarn build && rollup -c",
