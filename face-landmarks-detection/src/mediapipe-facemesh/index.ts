@@ -299,6 +299,8 @@ class FaceMesh implements MediaPipeFaceMesh {
     } = config;
     let input = config.input;
 
+    console.log("Raphael was here.");
+
     if (predictIrises && this.pipeline.irisModel == null) {
       throw new Error(
           'The iris model was not loaded as part of facemesh. ' +
